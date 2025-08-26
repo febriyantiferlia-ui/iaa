@@ -13,9 +13,9 @@ export default function Home() {
   ];
 
   const projects = [
-    { img: "/fefer.jpg", title: "Portfolio Website", desc: "Website pribadi untuk menampilkan biodata, skill, dan project." },
-    { img: "/ferfer.jpg", title: "E-Commerce App", desc: "Aplikasi toko online dengan fitur keranjang belanja dan checkout." },
-    { img: "/lilia.jpg", title: "UI Design Dashboard", desc: "Desain dashboard modern untuk monitoring data." },
+    { img: "/barik.jpeg", title: "Portfolio Website", desc: "Website pribadi untuk menampilkan biodata, skill, dan project." },
+    { img: "/gerjal.jpeg", title: "E-Commerce App", desc: "Aplikasi toko online dengan fitur keranjang belanja dan checkout." },
+    { img: "/karvil.jpeg", title: "UI Design Dashboard", desc: "Desain dashboard modern untuk monitoring data." },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
           textShadow: "1px 1px 6px white",
         }}
       >
-        🌸 Portfolio Ferlia Febriyanti 🌸
+        🌸 Bio Data Lia 🌸
       </h1>
 
       {/* Foto Profil & Biodata */}
@@ -55,7 +55,7 @@ export default function Home() {
         }}
       >
         <Image
-          src="/fer.jpg"
+          src="/ujan.jpeg"
           alt="Ferlia Febriyanti"
           width={220}
           height={220}
@@ -220,3 +220,4 @@ export default function Home() {
     </main>
   );
 }
+
