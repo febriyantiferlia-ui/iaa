@@ -22,7 +22,7 @@ export default function Home() {
     <main
       style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #fbc2eb, #a6c1ee)",
+        background: "linear-gradient(135deg, pink, white)", // 🌸🤍 dominan pink putih
         padding: "40px 20px",
         fontFamily: "Arial, sans-serif",
       }}
@@ -34,7 +34,7 @@ export default function Home() {
           fontSize: "42px",
           marginBottom: "20px",
           color: "pink",
-          textShadow: "2px 2px 6px black",
+          textShadow: "1px 1px 6px white",
         }}
       >
         🌸 Portfolio Ferlia Febriyanti 🌸
@@ -51,7 +51,7 @@ export default function Home() {
           display: "flex",
           alignItems: "center",
           gap: "30px",
-          boxShadow: "0 8px 25px rgba(0,0,0,0.2)",
+          boxShadow: "0 8px 25px rgba(255,182,193,0.6)", // pink soft shadow
         }}
       >
         <Image
@@ -72,7 +72,7 @@ export default function Home() {
             listStyle: "none",
             margin: 0,
             padding: 0,
-            color: "#333",
+            color: "#444",
           }}
         >
           <li><b>Nama:</b> Ferlia Febriyanti</li>
@@ -89,10 +89,10 @@ export default function Home() {
           margin: "50px auto",
           textAlign: "center",
           maxWidth: "900px",
-          background: "rgba(255,255,255,0.8)",
+          background: "rgba(255,255,255,0.9)",
           borderRadius: "20px",
           padding: "30px",
-          boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
+          boxShadow: "0 6px 15px rgba(255,182,193,0.5)",
         }}
       >
         <h2
@@ -100,7 +100,7 @@ export default function Home() {
             fontSize: "28px",
             marginBottom: "20px",
             color: "pink",
-            textShadow: "1px 1px 4px black",
+            textShadow: "1px 1px 4px white",
           }}
         >
           💡 My Skills
@@ -110,13 +110,13 @@ export default function Home() {
             <div
               key={i}
               style={{
-                background: "linear-gradient(135deg, #fbc2eb, #a6c1ee)",
+                background: "linear-gradient(135deg, pink, white)",
                 borderRadius: "15px",
                 padding: "20px",
                 fontWeight: "bold",
                 fontSize: "16px",
-                boxShadow: "0 6px 12px rgba(0,0,0,0.2)",
-                color: "#222",
+                boxShadow: "0 6px 12px rgba(255,182,193,0.5)",
+                color: "#333",
               }}
             >
               <span style={{ fontSize: "24px", marginRight: "8px" }}>{skill.icon}</span>
@@ -132,10 +132,10 @@ export default function Home() {
           margin: "50px auto",
           textAlign: "center",
           maxWidth: "900px",
-          background: "rgba(255,255,255,0.9)",
+          background: "rgba(255,255,255,0.95)",
           borderRadius: "20px",
           padding: "30px",
-          boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
+          boxShadow: "0 6px 15px rgba(255,182,193,0.5)",
         }}
       >
         <h2
@@ -143,7 +143,7 @@ export default function Home() {
             fontSize: "28px",
             marginBottom: "20px",
             color: "pink",
-            textShadow: "1px 1px 4px black",
+            textShadow: "1px 1px 4px white",
           }}
         >
           📂 Projects
@@ -153,10 +153,10 @@ export default function Home() {
             <div
               key={i}
               style={{
-                background: "#fff",
+                background: "linear-gradient(135deg, white, pink)",
                 borderRadius: "15px",
                 padding: "15px",
-                boxShadow: "0 4px 10px rgba(0,0,0,0.15)",
+                boxShadow: "0 4px 10px rgba(255,182,193,0.5)",
                 textAlign: "left",
               }}
             >
@@ -165,13 +165,13 @@ export default function Home() {
                 alt={project.title}
                 width={400}
                 height={250}
-                style={{ borderRadius: "10px", objectFit: "cover" }}
+                style={{ borderRadius: "10px", objectFit: "cover", border: "3px solid pink" }}
               />
               <h3
                 style={{
                   margin: "10px 0",
                   color: "pink",
-                  textShadow: "1px 1px 4px black",
+                  textShadow: "1px 1px 4px white",
                 }}
               >
                 {project.title}
@@ -188,24 +188,34 @@ export default function Home() {
           margin: "50px auto",
           textAlign: "center",
           maxWidth: "600px",
-          background: "rgba(255,255,255,0.85)",
+          background: "linear-gradient(135deg, pink, white)",
           borderRadius: "20px",
           padding: "30px",
-          boxShadow: "0 6px 15px rgba(0,0,0,0.2)",
+          boxShadow: "0 6px 15px rgba(255,182,193,0.5)",
         }}
       >
         <h2
           style={{
             fontSize: "28px",
             marginBottom: "20px",
-            color: "pink",
-            textShadow: "1px 1px 4px black",
+            color: "white",
+            textShadow: "1px 1px 4px pink",
           }}
         >
           📩 Contact Me
         </h2>
-        <p>Email: <a href="mailto:ferliafebriyanti@email.com">ferliafebriyanti@email.com</a></p>
-        <p>Instagram: <a href="https://instagram.com/ferliafebriyanti" target="_blank">instagram.com/ferliafebriyanti</a></p>
+        <p style={{ color: "#333" }}>
+          Email:{" "}
+          <a href="mailto:ferliafebriyanti@email.com" style={{ color: "pink", fontWeight: "bold" }}>
+            ferliafebriyanti@email.com
+          </a>
+        </p>
+        <p style={{ color: "#333" }}>
+          Instagram:{" "}
+          <a href="https://instagram.com/ferliafebriyanti" target="_blank" style={{ color: "pink", fontWeight: "bold" }}>
+            instagram.com/ferliafebriyanti
+          </a>
+        </p>
       </section>
     </main>
   );
